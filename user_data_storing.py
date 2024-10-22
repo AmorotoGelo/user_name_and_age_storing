@@ -24,5 +24,22 @@
 
 # Print error message if the user input neither yes nor no
 
+# Create an empty list to store oldest person
+
+# Set the oldest age to zero
+
+# Set the name and age as user
+
+# Identify and compare if the user's age is older than the current oldest
+
+# Reset the oldest person if there is a new oldest person
+
+# Store all the oldest person in list
+
+# Display the oldest person/s
+
+# Print error message if there is no age input
+
+
 
 
