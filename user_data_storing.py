@@ -30,9 +30,11 @@ while True:
 #Ask user if they want to input another data
     another_entry = input("Do you want to input another entry? (Yes/No): ")
 # Break if the user input no
-     
+    if another_entry == "no":
+        break
 # Print error message if the user input neither yes nor no
-
+    elif another_entry != "yes":
+     print("Invalid entry, Try again")
 # Create an empty list to store oldest person
 
 # Set the oldest age to zero
