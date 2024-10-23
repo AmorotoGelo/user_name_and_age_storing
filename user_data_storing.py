@@ -12,15 +12,18 @@ while True:
     try:     
         # Ask user to input a name
         name = input("Enter name: ")    
-# Raise an error if the name is invalid, ask user to input an alphabet
+        # Raise an error if the name is invalid, ask user to input an alphabet
         if not valid_name(name):
             raise  ValueError ("Invalid character, Please input an alphabet")
+        # Ask user to input age
+        age = int(input("Enter age: "))
+        # Raise an error if the age is invalid, ask user to input positive integer from 1-120
+        if not valid_age(age):
+            raise ValueError ("Invalid character, Please input an integer(1-120)")
     except ValueError as error:
-        print(error)
+        print(error)    
 
-# Ask user to input age
-
-# Raise an error if the name is invalid, ask user to input positive integer from 0-120
+# Raise an error if the age is invalid, ask user to input positive integer from 0-120
 
 # Store data in list
 
