@@ -44,8 +44,10 @@ if user_data:
         for user in user_data:
             name, age = user        
 # Identify and compare if the user's age is older than the current oldest
-
-# Reset the oldest person if there is a new oldest person
+            if age > oldest_age:
+                oldest_age = age
+                # Reset the oldest person if there is a new oldest person
+                oldest_person = [user]
 
 # Store all the oldest person in list
 
