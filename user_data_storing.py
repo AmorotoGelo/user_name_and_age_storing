@@ -7,12 +7,16 @@ def valid_name(name):
 def valid_age(age):
     return age.isdigit() and 0 < int(age) <= 120
 # Create a loop that asks user for name and age
-
-# Use try and except to validate the datas
-
-# Ask user to input a name
-
+while True:
+    # Use try and except to validate the datas
+    try:     
+        # Ask user to input a name
+        name = input("Enter name: ")    
 # Raise an error if the name is invalid, ask user to input an alphabet
+        if not valid_name(name):
+            raise  ValueError ("Invalid character, Please input an alphabet")
+    except ValueError as error:
+        print(error)
 
 # Ask user to input age
 
