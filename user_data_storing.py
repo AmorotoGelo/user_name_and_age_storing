@@ -48,9 +48,9 @@ if user_data:
                 oldest_age = age
                 # Reset the oldest person if there is a new oldest person
                 oldest_person = [user]
-
-# Store all the oldest person in list
-
+            # Store all the oldest person in list
+            elif age == oldest_person:
+                oldest_person.append(user)
 # Display the oldest person/s
 
 # Print error message if there is no age input
