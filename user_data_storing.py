@@ -49,10 +49,12 @@ if user_data:
                 # Reset the oldest person if there is a new oldest person
                 oldest_person = [user]
             # Store all the oldest person in list
-            elif age == oldest_person:
+            elif age == oldest_age:
                 oldest_person.append(user)
 # Display the oldest person/s
-        print("The oldest person/s: ", name, "age: ", age)
+        for user in oldest_person:
+            name, age = user
+            print("The oldest person/s:", name, "age:", age)
 # Print error message if there is no age input
 else:
     print("Invalid. No user data available")
