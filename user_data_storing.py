@@ -52,9 +52,9 @@ if user_data:
             elif age == oldest_person:
                 oldest_person.append(user)
 # Display the oldest person/s
-
+        print("The oldest person/s: ", name, "age: ", age)
 # Print error message if there is no age input
-
-
+else:
+    print("Invalid. No user data available")
 
 
