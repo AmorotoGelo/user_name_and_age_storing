@@ -36,11 +36,13 @@ while True:
     elif another_entry != "yes":
      print("Invalid entry, Try again")
 # Create an empty list to store oldest person
-
+if user_data:
+        oldest_person = []
 # Set the oldest age to zero
-
+        oldest_age = 0
 # Set the name and age as user
-
+        for user in user_data:
+            name, age = user        
 # Identify and compare if the user's age is older than the current oldest
 
 # Reset the oldest person if there is a new oldest person
